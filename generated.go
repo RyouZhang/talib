@@ -1,6 +1,7 @@
 package talib
 
-// #cgo LDFLAGS: -lta_lib
+// #cgo CFLAGS: -I/usr/local/include/ta-lib
+// #cgo LDFLAGS: -L/usr/local/lib -ltalib -ldl -lm
 // #include "ta-lib/ta_libc.h"
 import "C"
 
